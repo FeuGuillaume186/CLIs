@@ -156,7 +156,9 @@ async function main(): Promise<void> {
 
     console.log();
     await proc.exited;
-    spinner.succeed(`Téléchargement terminé avec succès : ${output}`);
+
+    if (proc.exitCode === 0) spinner.succeed(`Téléchargement terminé avec succès : ${output}`);
+    else spinner.fail("Le téléchargement a échoué.");
 
     process.exit(0);
   } catch {

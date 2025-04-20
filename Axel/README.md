@@ -19,8 +19,8 @@ Axel est un outil CLI permettant de télécharger rapidement des fichiers depuis
 
 1. Clonez ce dépôt :
    ```bash
-   git clone <url-du-depot>
-   cd Axel
+   git clone https://github.com/FeuGuillaume186/CLIs.git
+   cd CLIs/Axel
    ```
 2. Installez les dépendances :
    ```bash
