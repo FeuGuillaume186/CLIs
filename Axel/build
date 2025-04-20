@@ -1,0 +1,8 @@
+#!/bin/bash
+
+bun build index.ts --outdir=dist --target=bun --minify
+chmod +x "$(pwd)/dist/index.js"
+ln -sf "$(pwd)/dist/index.js" /usr/local/bin/axl
+clear
+echo -e "✅ \033[34m\"$(pwd)/dist/index.js\"\033[0m -> \033[31m\"/usr/local/bin/axl\"\033[0m"
+echo -e "🚀 Exécutez \033[32maxl\033[0m depuis n'importe où dans le terminal."
